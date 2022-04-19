@@ -3,19 +3,19 @@
 decimal = int(input("Insert a decimal number: "))
 a = int(input("How many bytes do you desire? "))
 
-cards = []
+bytes = []
 t = []
 for i in range(a-1, -1,-1):
-    cards.append(2**i)
+    bytes.append(2**i)
     t.append(0)
 
 r = decimal
 g = 0
 
 while r !=0:
-    if r >= cards[g]:
-        r = r - cards[g]
-        t[g] = cards[g]
+    if r >= bytes[g]:
+        r = r - bytes[g]
+        t[g] = bytes[g]
         if t[g] != 0:
             t[g] = 1
             print(r)
