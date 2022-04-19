@@ -1,21 +1,21 @@
 #Decimal to binary number converter
 
 decimal = int(input("Insert a decimal number: "))
-a = int(input("How many bytes do you desire? "))
+a = int(input("How many bits do you desire? "))
 
-bytes_t = [] #total bytes, i used cards previously cause my professor gave examples of binary numbers using cards.
+bits = [] #total bits, i used cards previously cause my professor gave examples of binary numbers using cards.
 t = []
 for i in range(a-1, -1,-1):
-    bytes_t.append(2**i)
+    bits.append(2**i)
     t.append(0)
 
 r = decimal
 g = 0
 
 while r !=0:
-    if r >= bytes_t[g]:
-        r = r - bytes_t[g]
-        t[g] = bytes_t[g]
+    if r >= bits[g]:
+        r = r - bits[g]
+        t[g] = bits[g]
         if t[g] != 0:
             t[g] = 1
             print(r)
