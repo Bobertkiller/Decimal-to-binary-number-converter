@@ -3,7 +3,7 @@
 decimal = int(input("Insert a decimal number: "))
 a = int(input("How many bytes do you desire? "))
 
-bytes_t = []
+bytes_t = [] #total bytes, i used cards previously cause my professor gave examples of binary numbers using cards.
 t = []
 for i in range(a-1, -1,-1):
     bytes_t.append(2**i)
